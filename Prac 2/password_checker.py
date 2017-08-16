@@ -56,12 +56,12 @@ def is_valid_password(password):
 
 
 
-        # TODO: count each kind of character (use str methods like isdigit)
+        #  count each kind of character (use str methods like isdigit)
 
 
-    # TODO: if any of the 'normal' counts are zero, return False
+    #  if any of the 'normal' counts are zero, return False
 
-    # TODO: if special characters are required, then check the count of those
+    #  if special characters are required, then check the count of those
     # and return False if it's zero
 
     # if we get here (without returning False), then the password must be valid

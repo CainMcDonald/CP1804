@@ -5,7 +5,7 @@ Answer the following questions:
 2. When will a ZeroDivisionError occur? When the denominator is entered as 0
 3. Could you change the code to avoid the possibility of a ZeroDivisionError? Nothing the ValueError is the most logical.
 """
-
+#Exceptions
 
 try:
     numerator = int(input("Enter the numerator: "))
