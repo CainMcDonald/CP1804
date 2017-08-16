@@ -24,3 +24,4 @@ for line in in_file:
     total += number
 print(total)
 in_file.close()
+#changes

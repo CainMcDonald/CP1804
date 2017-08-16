@@ -28,7 +28,7 @@ for i in range(len(numbers)):
 for i, number in enumerate(numbers):
     print("Number {0} is {1:>5}".format(i + 1, number))
 
-#
+#things_to_do does this
 # produce the following output:
 #   0
 #  50
