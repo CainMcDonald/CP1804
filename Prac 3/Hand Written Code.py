@@ -4,8 +4,7 @@ def main():
 
 
 def print_name(name):
-    for char in name[::2]:
-        print("{}".format(char))
+    print(name[::3])
 
 
 def get_name():
