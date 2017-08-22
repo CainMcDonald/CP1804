@@ -1,21 +1,16 @@
-score = float(input("Enter Score: "))
-result = return_result
-print(result)
+def main():
+    score = float(input("Enter Score: "))
+    print(return_result(score))
 
 
-def return_result(final_score):
-    if final_score < 50:
-        return "Bad"
-    elif final_score < 90:
+def return_result(score):
+    if score < 0 or score > 100:
+        return "Invalid Score"
+    elif score >= 90:
+        return "Excellent"
+    elif score >= 50:
         return "Passable"
     else:
-        return "Excellent"
+        return "Bad"
 
-# if 50 <= score < 90:
-#         print("Passable")
-#     elif score >= 90:
-#         print("Excellent")
-#     else:
-#         print("Bad")
-#     score = float(input("Enter Score: "))
-# print("Invalid Score")
+main()
