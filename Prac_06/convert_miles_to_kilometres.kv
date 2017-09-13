@@ -1,0 +1,24 @@
+BoxLayout:
+    orientation: 'horizontal'
+    TextInput:
+        id: input_distance
+        text: ''
+        BoxLayout:
+            orientation: 'vertical'
+            Button:
+                id: button_up
+                text: 'up'
+            Button:
+                id: button_down
+                text: 'down'
+            BoxLayout:
+                orientation: 'vertical'
+                Button:
+                    id: convert
+                    text: 'Convert m to km'
+                    on_press: app.convert_m_to_km()
+                Label:
+                    id: km_label
+                    text: 'Enter Distance in M'
+                    color: (1, 1, 0, 1)
+
