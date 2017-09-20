@@ -3,16 +3,23 @@ BoxLayout:
     BoxLayout:  # blue
         TextInput:
             text: ''
+            id: input_distance
         BoxLayout:
             orientation: 'vertical'
             Button:
                 text: 'up'
+                on_press: app.handle_increment(1)
             Button:
                 text: 'down'
+                on_press: app.handle_increment(-1)
     Button:
-        text: 'Convert m to km'
+        text: 'Convert miles to km'
+        on_press: app.handle_convert()
+
     Label:
-        text: 'Enter Distance in M'
+        text: 'Enter Distance in Miles'
+        id: output_label
+
 
 
 
