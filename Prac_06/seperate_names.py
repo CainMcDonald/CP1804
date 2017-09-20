@@ -1,6 +1,7 @@
 from kivy.app import App
 from kivy.lang import Builder
 from kivy.uix.button import Button
+from kivy.uix.label import Label
 
 
 class SeperateNames(App):
@@ -12,12 +13,12 @@ class SeperateNames(App):
 
     def __init__(self, **kwargs):
         super().__init__(**kwargs)
-        self.names = {'Dylan smith', 'Ted ryan', 'Jenny jones', 'Billy D', 'Kevin'}
+        self.names = ['Dylan smith', 'Ted ryan', 'Jenny jones', 'Billy D', 'Kevin']
 
     def create_widget(self):
         for name in self.names:
-            temp_button = Button(text=name)
-            self.root.ids.entriesBox.add_widget(temp_button)
+            temp_label = Label(text=name)
+            self.root.ids.entriesBox.add_widget(temp_label)
 
 
 SeperateNames().run()
