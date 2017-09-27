@@ -19,7 +19,7 @@ def main():
 
     print("These are my guitars:")
 
-    if guitars != []:
+    if guitars:
         for i, guitar in enumerate(guitars):
             vintage_string = ""
             if guitar.is_vintage():
