@@ -1,5 +1,7 @@
 from Prac_07.car import Car
+
 MENU = 'Menu:\nd) drive\nr) refuel\nq) quit'
+
 
 def main():
     print('Lets Drive')
@@ -15,7 +17,7 @@ def main():
                 print("Distance must be over 0 km")
                 distance_to_drive = int(input("How many km do you wish to drive? "))
             distance_driven = car.drive(distance_to_drive)
-            print("The car drove {}km".format(distance_to_drive))
+            print("The car drove {}km".format(distance_driven))
             if car.fuel == 0:
                 print(" and ran out of fuel")
             print(".")
@@ -32,4 +34,6 @@ def main():
         print(MENU)
         choice = input("Enter your choice: ").lower()
     print("\nGoodBye {}'s driver".format(car.name))
+
+
 main()
